@@ -1,6 +1,6 @@
 {
   "name": "playground",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "creating a webserver with express",
   "main": "app.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "author": "Antony",
   "license": "ISC",
   "dependencies": {
+    "debug": "^4.3.3",
     "express": "^4.17.3"
   }
 }
