@@ -1,11 +1,17 @@
-"use strict";
+"use strict"; // excute code in strict mode
+              //helps to write cleaner code
+
 const express = require("express"); //express object
 const app = express();
 
-app.get("/",(req, res) =>{
+
+//read some data 
+app.get("/data/:id",(req, res) =>{
     console.log(req.url);
-    res.send("<h1>Hello</h1>");
+    res.send("test data", {output: req.params.id});
 });
+
+app.post()
 
 
 app.listen(3000, (err) => {
